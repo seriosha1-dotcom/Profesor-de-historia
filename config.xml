@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.sergiogarcia.wikiprofesor" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Wiki Profesor</name>
+    <description>Asistente educativo inteligente que combina Wikipedia con IA para el aprendizaje</description>
+    <author email="sergio.garcia.nebot@example.com" href="#">
+        Sergio García Nebot
+    </author>
+    <content src="index.html" />
+    
+    <!-- Permisos de red -->
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-navigation href="https://*/*" />
+    <allow-navigation href="http://*/*" />
+    
+    <!-- Configuración de acceso a red -->
+    <access origin="*" />
+    <access origin="https://es.wikipedia.org" />
+    <access origin="https://api.deepseek.com" />
+    <access origin="https://cdnjs.cloudflare.com" />
+    
+    <!-- Configuración específica para Android -->
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="android-minSdkVersion" value="24" />
+        <preference name="android-targetSdkVersion" value="34" />
+        <preference name="android-compileSdkVersion" value="34" />
+        
+        <!-- Permisos Android -->
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    </platform>
+    
+    <!-- Configuración general -->
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="24" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="FadeSplashScreenDuration" value="300" />
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+</widget>
